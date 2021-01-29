@@ -1,0 +1,241 @@
+html {
+    background-color: #01212E;
+    line-height: 1.5;
+  }
+  /* fonts available:  
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Roboto', sans-serif; 
+  noto sans use for regular text (regular 400)
+  Roboto use for headings (regular 400, medium 500, Bold 700)
+  */
+
+  body {
+   font-family: 'Noto Sans JP', sans-serif;
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+  }
+
+.header-container {
+  display:flex;
+  flex-direction: column;
+
+}
+  header {
+    color: #f5f8fa;
+    background-image: url(../images/ntr-background-2-transparent.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family: 'Roboto', sans-serif; 
+    padding:3.2em;
+    display: flex;
+}
+
+.special-color {
+    color: #fcfaf8;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif; 
+ }
+
+#btn {
+    height: fit-content;
+    width: fit-content;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color:rgba(3, 5, 102, 0.795);
+    color: #FFF;
+    text-decoration:none;
+    margin-top: 20px;
+    border: 2px solid #FFF;
+    transition: background-color 0.25s, border 0.25s, transform 0.25s, box-shadow 0.25s;
+    font-family: 'Roboto', sans-serif; 
+    display:flex;
+    margin-left: auto;
+    order: 2;
+    box-sizing: border-box;
+    align-items:baseline;
+}
+
+@media (max-width: 768px ){
+    #btn {
+      text-align:center;
+    }
+}
+
+
+#btn:hover {
+    background-color: teal;
+    border: 4px solid;
+    transform: translateY(-.50em);
+    box-shadow:0 0.5em 0.5em -0.4em teal;
+}
+
+  /*Site Navigation*/
+
+  #site-nav {
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  #site-nav ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    box-sizing:border-box;
+  }
+  
+  #site-nav li {
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    margin-right: 5px;
+    display:inline-block;
+    box-sizing: border-box;
+  }
+  /* @media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+ */
+
+  @media (max-width: 575.98px){
+  #site-nav li {
+    display: flex;
+    flex-direction: column;
+  }
+  }
+  
+  @media (max-width: 768px ){
+    #site-nav li {
+      display: flex;
+      flex-direction: column;
+      flex-wrap:wrap;
+      align-items:center;
+      margin: 1em;
+    }
+    }
+  
+
+
+  
+  #site-nav a {
+    display:block;
+    color:  #FFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid #FFF;
+    border-radius: 10px;
+    font-weight:bold;
+    box-sizing: border-box;
+  }
+  
+  #site-nav a:hover {
+    background-color:  teal;
+  }
+  
+  /* End site Navigation */
+
+  h1 {
+    font-size:2.5rem;
+    font-family: 'Roboto', sans-serif; 
+    -webkit-text-stroke: black 1px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size:1.5em;
+    font-family: 'Roboto', sans-serif; 
+  }
+
+  #site-content {
+    border-top: 3px solid #27288f;
+    border-bottom: 3px solid #27288f;
+    background-color: #fff;
+    display:flex;
+    box-sizing:border-box;
+    padding-left: 3.2em;
+    padding-right: 3.2em;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  @media (max-width: 768px ){
+    #site-content {
+      flex-direction: column;
+    }
+  }
+
+
+  #main-area {
+    max-width: 70%;
+  }
+
+  @media (max-width: 768px ){
+    #main-area {
+      display:flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
+
+  
+  .about-us-container {
+    display:flex;
+  }
+
+  .about-us-2 {
+max-width: 50%;
+  }
+
+  @media (max-width: 768px ){
+    .about-us-2 {
+      max-width: 100%;
+    }
+  }
+
+  .about-us-3 {
+    max-width:50%;
+  }
+
+  @media (max-width: 768px ){
+    .about-us-3 {
+      max-width:100%;
+    }
+  }
+
+  
+
+  #sidebar {
+      max-width: 30%;
+      display:flex;
+      flex-direction: column;
+      background-color: #b5783c8f;
+      padding: 15px;
+      box-sizing:border-box;
+  }
+
+  @media (max-width: 768px ){
+    #sidebar {
+      max-width: 100%;
+      margin-bottom: 2em;
+    }
+  }
+
+
+  
+  
+    footer {
+    color: #FFF;
+    margin: 0 auto;
+    padding-left: 3.2em;
+    padding-right: 3.2em;
+    font-family: 'Roboto', sans-serif; 
+    }
